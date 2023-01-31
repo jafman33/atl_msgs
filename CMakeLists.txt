@@ -15,7 +15,6 @@ find_package(builtin_interfaces REQUIRED)
 find_package(rosidl_default_generators REQUIRED)
 find_package(eigen3_cmake_module REQUIRED)
 find_package(Eigen3 3.3 REQUIRED)
-find_package(Sophus REQUIRED)
 
 rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/ServoInput.msg"
