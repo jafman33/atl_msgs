@@ -40,7 +40,6 @@ ament_export_dependencies(
   std_srvs
   eigen3_cmake_module
   Eigen3
-  Sophus
 )
 
 install(
