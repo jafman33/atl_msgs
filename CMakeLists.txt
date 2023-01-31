@@ -19,6 +19,7 @@ find_package(Eigen3 3.3 REQUIRED)
 rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/ServoInput.msg"
   "msg/ServosInput.msg"
+  "msg/Depth.msg"
   
   DEPENDENCIES
   std_msgs
