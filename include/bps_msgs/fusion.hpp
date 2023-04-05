@@ -134,6 +134,7 @@
 #include <atl_msgs/msg/servo_input.hpp>
 #include <atl_msgs/msg/servos_input.hpp>
 #include <atl_msgs/msg/depth.hpp>
+#include <atl_msgs/msg/leak.hpp>
 
 
 // builtin_interfaces
@@ -631,6 +632,10 @@ BOOST_FUSION_ADAPT_STRUCT(
 BOOST_FUSION_ADAPT_STRUCT(
   atl_msgs::msg::Depth,
   depth)
+
+BOOST_FUSION_ADAPT_STRUCT(
+  atl_msgs::msg::Leak,
+  leak)
 
 BOOST_FUSION_ADAPT_STRUCT(
   atl_msgs::msg::EnginesInput,
