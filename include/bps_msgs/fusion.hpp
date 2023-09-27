@@ -131,6 +131,8 @@
 #include <visualization_msgs/msg/menu_entry.hpp>
 
 
+#include <atl_msgs/msg/servo_feedback.hpp>
+#include <atl_msgs/msg/servos_feedback.hpp>
 #include <atl_msgs/msg/servo_input.hpp>
 #include <atl_msgs/msg/servos_input.hpp>
 #include <atl_msgs/msg/depth.hpp>
@@ -626,7 +628,7 @@ BOOST_FUSION_ADAPT_STRUCT(
 
 
 BOOST_FUSION_ADAPT_STRUCT(
-  atl_msgs::msg::EngineInput,
+  atl_msgs::msg::ServoInput,
   delta)
 
 BOOST_FUSION_ADAPT_STRUCT(
@@ -638,7 +640,15 @@ BOOST_FUSION_ADAPT_STRUCT(
   leak)
 
 BOOST_FUSION_ADAPT_STRUCT(
-  atl_msgs::msg::EnginesInput,
+  atl_msgs::msg::ServosInput,
   header, inputs, active)
+
+BOOST_FUSION_ADAPT_STRUCT(
+  atl_msgs::msg::ServoFeedback,
+  delta)
+
+BOOST_FUSION_ADAPT_STRUCT(
+  atl_msgs::msg::ServosFeedback,
+  header, feedback, active)
 
 #endif  // ATL_LIBRARY__ATL_MSG_FUSION_HPP_
